@@ -1,3 +1,37 @@
+/* main.css should only contain styles that apply to all pages */
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+
+#wrapper {
+    max-width: 1200px;
+    max-height: 80vw;
+    margin: 0 auto;
+}
+
+#main-header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas:
+        "logo .... controls";
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#controls-header {
+    grid-area: controls;
+}
+
+h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+p {
+    padding-top: 0;
+    margin-top: 0;
 }
