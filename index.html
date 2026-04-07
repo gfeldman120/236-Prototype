@@ -4,15 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script type="module" src="src/script.js"></script>
-    <title>Home page</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script type="module" src="src/index.js"></script>
+    <title>Home Page</title>
 </head>
 
 <!-- index.html is where the homepage will be
 class pages will be in /classes/ -->
+
+<!-- For the LoFi Prototype, this page will pretty much just have the header, 
+basic navigation, and some colors and buttons -->
+
+<!-- It's probably already implied, but IGME-330/IGME-235 standards should be followed 
+ since they're good at organizing things well -->
+
+<!-- We should also make sure it validates before we turn it in -->
+
 <body>
-    <p>Text text</p>
+    <div id="wrapper">
+        <!-- On the homepage, the header will have the logo, a 
+        dropdown menu of all of a student's classes, a button that goes 
+        directly to the student's grades, a help button, and a button to 
+        the student's profile -->
+        <header id="main-header">
+            <!-- main logo -->
+            <h1 id="logo">RIT | myCourses</h1>
+
+            <div id="controls-header">
+                <label for="select-class">Choose a class to view: </label>
+                <select name="view-class" id="select-class">
+                    <option value="home-page">Home Page</option>
+                    <option value="class-1">Class 1</option>
+                    <option value="class-2">Class 2</option>
+                </select>
+
+                <button type="button" id="button-grades">Grades</button>
+                <button type="button" id="button-help">Help</button>
+                <button type="button" id="button-profile">Profile</button>
+            </div>
+        </header>
+
+        <!-- Main will have an announcements section, in which announcements 
+         from all classes will be shown, in order of most recent, and the 
+         work to do section -->
+        <main>
+            <!-- Announcements will on the left and in the center, and work 
+             to do is on the right, like on the current myCourses  -->
+            <div id="announcements">
+                <hr>
+
+                <!-- Announcement item template -->
+                <!-- <div id="announcement-number">
+                    <a href="url to announcement on class page"><h2>Announcement Title</h2></a>
+                    <p>
+                        Announcement Text or lorem ipsum
+                    </p>
+                </div>
+                <hr> -->
+
+                <div id="announcement-1">
+                    <a href="classes/class1.html">
+                        <h2>Announcement 1</h2>
+                    </a>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptates magnam deserunt,
+                        similique obcaecati ut veritatis commodi neque debitis itaque incidunt illo ipsa, quos,
+                        accusamus necessitatibus? Excepturi molestias iusto perspiciatis odio vel?
+                    </p>
+                </div>
+                <hr>
+
+                <div id="announcement-2">
+                    <a href="classes/class2.html">
+                        <h2>Announcement 2</h2>
+                    </a>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic optio cumque quidem amet veniam
+                        mollitia! Nulla, quo! Quae optio et asperiores quidem nam dignissimos qui quibusdam recusandae
+                        magni. Optio harum quo enim error, quasi voluptatibus. Ratione voluptate omnis repellendus ea
+                        dolorem iusto labore fugiat praesentium vitae laboriosam!
+                    </p>
+                </div>
+                <hr>
+            </div>
+
+            <!-- Work to do is going to be pretty much the same as it is currently, but overdue assignments will be in a
+              separate section -->
+            <!-- The number in the h2 should indicate how many assignments fit into that category. -->
+            <aside id="work-to-do">
+                <div id="work-to-do-panel">
+                    <!-- Not really sure how to do this without a bunch of JS, but this should only be shown if there are 
+                     actually overdue assignments -->
+                    <section id="section-overdue">
+                        <h2>Overdue Assignments (#)</h2>
+
+                        <!-- Assignment template -->
+                        <!-- <div id="assignment-name">
+                            <a href="url to assignment"><b>Assignment Name</b></a>
+                            <p>Class name | Due date</p>
+                        </div> -->
+                        <div id="assignment-overdue-1">
+                            <a href="classes/class1.html"><b>Overdue Assignment 1</b></a>
+                            <p>Class 1 | Due 1/1/70</p>
+                        </div>
+
+                        <div id="assignment-overdue-2">
+                            <a href="classes/class2.html"><b>Overdue Assignment 2</b></a>
+                            <p>Class 2 | Due 1/1/70</p>
+                        </div>
+                    </section>
+
+                    <section id="section-due">
+                        <h2>Assignments (#)</h2>
+
+                        <div id="assignment-due-1">
+                            <a href="classes/class1.html"><b>Assignment 1</b></a>
+                            <p>Class 1 | Due 1/1/00</p>
+                        </div>
+
+                        <div id="assignment-due-2">
+                            <a href="classes/class2.html"><b>Assignment 2</b></a>
+                            <p>Class 2 | Due 1/1/00</p>
+                        </div>
+                    </section>
+                </div>
+            </aside>
+        </main>
+    </div>
 </body>
 
 </html>
