@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/index.css">
-    <script type="module" src="src/main.js"></script>
-    <script type="module" src="src/index.js"></script>
+    <!-- Multiple scripts aren't working for some reason -->
+    <!-- <script type="module" src="src/main.js"></script>
+    <script type="module" src="src/index.js"></script> -->
+    <!-- Using this for now, copy paste stuff into appropriate spots once errors are figured out -->
+    <script type="module" src="src/allJSInOne.js"></script>
     <title>Home Page</title>
 </head>
 
@@ -85,6 +88,20 @@ basic navigation, and some colors and buttons -->
                 separate section -->
             <!-- The number in the h2 should indicate how many assignments fit into that category. -->
             <aside id="work-to-do">
+                <section id="section-due">
+                    <h2>Assignments (2)</h2>
+
+                    <div id="assignment-due-1">
+                        <a href="classes/class1.html"><b>Assignment 1</b></a>
+                        <p><a href="classes/class1.html">Class 1</a> | Due 12/31/99</p>
+                    </div>
+
+                    <div id="assignment-due-2">
+                        <a href="classes/class2.html"><b>Assignment 2</b></a>
+                        <p><a href="classes/class2.html">Class 2</a> | Due 12/31/99</p>
+                    </div>
+                </section>
+
                 <!-- Not really sure how to do this without a bunch of JS, but this should only be shown if there are 
                      actually overdue assignments -->
                 <section id="section-overdue">
@@ -98,20 +115,6 @@ basic navigation, and some colors and buttons -->
                     <div id="assignment-overdue-2">
                         <a href="classes/class2.html"><b>Overdue Assignment 2</b></a>
                         <p><a href="classes/class2.html">Class 2</a> | Due 1/1/70</p>
-                    </div>
-                </section>
-
-                <section id="section-due">
-                    <h2>Assignments (2)</h2>
-
-                    <div id="assignment-due-1">
-                        <a href="classes/class1.html"><b>Assignment 1</b></a>
-                        <p><a href="classes/class1.html">Class 1</a> | Due 12/31/99</p>
-                    </div>
-
-                    <div id="assignment-due-2">
-                        <a href="classes/class2.html"><b>Assignment 2</b></a>
-                        <p><a href="classes/class2.html">Class 2</a> | Due 12/31/99</p>
                     </div>
                 </section>
             </aside>
