@@ -1,1 +1,3 @@
-console.log("testing!");
+//index.js should only have js for the homepage
+
+"use strict";
