@@ -1,3 +1,5 @@
+//Always assume this is outdated
+
 "use strict";
 
 //selectClass is the dropdown menu for selecting what class the user wants to go to

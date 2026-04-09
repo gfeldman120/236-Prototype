@@ -7,26 +7,13 @@ let selectClass;
 //When the user changes the value of selectClass, switch the page to the one specified
 const selectClassChanged = () => {
     if (selectClass.value === "home-page") {
-        if (document.URL.includes("index.html")) {
-            window.open("index.html#select-class", "_self");
-        }
-        else if (document.URL.includes("class-1.html") || document.URL.includes("class-2.html")) {
-            window.open("../../index.html#select-class");
-        }
+        window.open("/index.html#select-class", "_self");
     }
-    else if (selectClass.value === "class-1") {
-        if (document.URL.includes("index.html")) {
-            window.open("classes/class-1/class-1.html#select-class", "_self");
-        }
-        else if (document.URL.includes("class-1.html")) {
-            window.open("class-1.html#select-class");
-        }
-        else if (document.URL.includes("class-2.html")) {
-            window.open("../class-1.html#select-class");
-        }
+    else if(selectClass.value === "class-1") {
+        window.open("/classes/class-1/class-1.html#select-class", "_self");
     }
-    else if (selectClass.value === "class-2") {
-        window.open("../classes/class2.html#select-class", "_self");
+    else if(selectClass.value === "class-2") {
+        window.open("/classes/class-2/class-2.html#select-class", "_self");
     }
 }
 
