@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/class.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/class.css">
+    <script type="module" src="../../src/main.js"></script>
     <title>Class 2</title>
 </head>
 
@@ -14,13 +15,14 @@
         <div id="wrapper">
             <!-- Left unchanged from main-header in index.html -->
             <header id="main-header">
-                <a href="../index.html">
+                <a href="../../index.html">
                     <h1 id="logo">RIT | myCourses</h1>
                 </a>
 
                 <div id="controls-header">
                     <label for="select-class">Choose a class to view: </label>
                     <select name="view-class" id="select-class">
+                        <option value="default">Select a class</option>
                         <option value="home-page">Home Page</option>
                         <option value="class-1">Class 1</option>
                         <option value="class-2">Class 2</option>
@@ -40,7 +42,7 @@
             <!-- All the actual class stuff goes here -->
             <div id="class-wrapper">
                 <header id="class-main-header">
-                    <h2 id="header-class">Class 2</h2>
+                    <h2 id="header-class">Class 1</h2>
                     <div id="extras">
                         <button type="button" id="button-notifications">Notifications</button>
                         <!-- Other extra stuff we want can be put here, just can't think of any rn -->
@@ -55,21 +57,26 @@
                     </div>
                 </header>
                 <div id="announcements">
-                    <h2>Announcement 2</h2>
-                    <a>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic optio cumque quidem amet veniam
+                    <a href="classes/class-2/class-2.html">
+                        <h2>Announcement 2</h2>
+                    </a>
+
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic optio cumque quidem amet veniam
                         mollitia! Nulla, quo! Quae optio et asperiores quidem nam dignissimos qui quibusdam recusandae
                         magni. Optio harum quo enim error, quasi voluptatibus. Ratione voluptate omnis repellendus ea
-                        dolorem iusto labore fugiat praesentium vitae laboriosam!</a>
+                        dolorem iusto labore fugiat praesentium vitae laboriosam!
+                    </p>
                 </div>
 
-                <!-- yoinked directly from index.html with class 1 stuff removed -->
+                <!-- yoinked directly from index.html with class 2 stuff removed -->
                 <aside id="work-to-do">
                     <section id="section-due">
                         <h2>Assignments (1)</h2>
 
                         <div id="assignment-due-2">
-                            <a href="classes/class2.html"><b>Assignment 2</b></a>
-                            <p><a href="classes/class2.html">Class 2</a> | Due 12/31/99</p>
+                            <a href="class-2.html"><b>Assignment 1</b></a>
+                            <p><a href="class-2.html">Class 1</a> | Due 12/31/99</p>
                         </div>
 
                     </section>
@@ -78,12 +85,16 @@
                         <h2>Overdue Assignments (1)</h2>
 
                         <div id="assignment-overdue-2">
-                            <a href="classes/class2.html"><b>Overdue Assignment 2</b></a>
-                            <p><a href="classes/class2.html">Class 2</a> | Due 1/1/70</p>
+                            <a href="class-2.html"><b>Overdue Assignment 1</b></a>
+                            <p><a href="class-2.html">Class 1</a> | Due 1/1/70</p>
                         </div>
                     </section>
                 </aside>
             </div>
+
+            <footer>
+                Made by George Dietrich, Gavin Feldman, and Aurora Wolf
+            </footer>
         </div>
     </main>
 </body>
