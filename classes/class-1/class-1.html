@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/class.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="../../styles/class.css">
+    <script type="module" src="../../src/main.js"></script>
     <title>Class 1</title>
 </head>
 
@@ -14,13 +15,14 @@
         <div id="wrapper">
             <!-- Left unchanged from main-header in index.html -->
             <header id="main-header">
-                <a href="../index.html">
+                <a href="../../index.html">
                     <h1 id="logo">RIT | myCourses</h1>
                 </a>
 
                 <div id="controls-header">
                     <label for="select-class">Choose a class to view: </label>
                     <select name="view-class" id="select-class">
+                        <option value="default">Select a class</option>
                         <option value="home-page">Home Page</option>
                         <option value="class-1">Class 1</option>
                         <option value="class-2">Class 2</option>
@@ -60,8 +62,8 @@
                         <h2>Assignments (1)</h2>
 
                         <div id="assignment-due-1">
-                            <a href="classes/class1.html"><b>Assignment 1</b></a>
-                            <p><a href="">Class 1</a> | Due 12/31/99</p>
+                            <a href="class-1.html"><b>Assignment 1</b></a>
+                            <p><a href="class-1.html">Class 1</a> | Due 12/31/99</p>
                         </div>
 
                     </section>
@@ -70,12 +72,16 @@
                         <h2>Overdue Assignments (1)</h2>
 
                         <div id="assignment-overdue-1">
-                            <a href="classes/class1.html"><b>Overdue Assignment 1</b></a>
-                            <p><a href="">Class 1</a> | Due 1/1/70</p>
+                            <a href="class-1.html"><b>Overdue Assignment 1</b></a>
+                            <p><a href="class-1.html">Class 1</a> | Due 1/1/70</p>
                         </div>
                     </section>
                 </aside>
             </div>
+
+            <footer>
+                Made by George Dietrich, Gavin Feldman, and Aurora Wolf
+            </footer>
         </div>
     </main>
 </body>

@@ -16,9 +16,9 @@
     display: grid;
     grid-template-columns: 4fr 2fr 2fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 
-    "class-name class-name  extras"
-    "links      links       links";
+    grid-template-areas:
+        "class-name class-name  extras"
+        "links      links       links";
     background-color: #F76902;
 }
 
@@ -42,20 +42,22 @@
     column-gap: 2em;
 }
 
-#header-links button{
+/* Commenting this out for now since they don't really look like buttons when styled like this */
+/* #header-links button {
     border: white;
     color: black;
-}
+} */
+
 /* Anything below this can be used outside #class-main-header */
 
 #announcements {
     grid-area: announcements;
 }
 
-#work-to-do{
+#work-to-do {
     grid-area: work-to-do;
 }
 
-#footer{
+#footer {
     grid-area: footer;
 }
