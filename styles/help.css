@@ -1,0 +1,21 @@
+#wrapper {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas:
+        "header        header        header"
+        "help          help          ......"
+        "footer        footer        footer";
+}
+
+#main-header {
+    grid-area: header;
+}
+
+#help {
+    grid-area: help;
+}
+
+footer {
+    grid-area: footer;
+}
