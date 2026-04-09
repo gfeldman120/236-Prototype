@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link rel="stylesheet" href="../styles/grades.css">
+    <title>Grades</title>
+</head>
+
+<body>
+    <main>
+        <div id="wrapper">
+            <!-- Left unchanged from main-header in index.html -->
+            <header id="main-header">
+                <a href="../index.html">
+                    <h1 id="logo">RIT | myCourses</h1>
+                </a>
+
+                <div id="controls-header">
+                    <label for="select-class">Choose a class to view: </label>
+                    <select name="view-class" id="select-class">
+                        <option value="home-page">Home Page</option>
+                        <option value="class-1">Class 1</option>
+                        <option value="class-2">Class 2</option>
+                    </select>
+
+                    <a href="other-pages/grades.html">
+                        <button type="button" id="button-grades">Grades</button>
+                    </a>
+                    <button type="button" id="button-help">Help</button>
+                    <button type="button" id="button-profile">Profile</button>
+                    <a href="https://campus.ps.rit.edu/psc/RITXCP1D/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?">
+                        <button type="button" id="button-sis">SIS</button>
+                    </a>
+                </div>
+            </header>
+
+            <!-- Actual grades stuff goes here -->
+            <div id="grades-wrapper">
+                <div class="grade-box">
+                    <h2 class="class-name">Average Grade</h2>
+                    <h3 class="grade">93.09/100</h3>
+                </div>
+
+                <div class="grade-box">
+                    <h2 class="class-name"><a href="../classes/class1.html">Class 1</a></h2>
+                    <h3 class="grade">94.21/100 (75.37/80)</h3>
+                </div>
+
+                <div class="grade-box">
+                    <h2 class="class-name"><a href="../classes/class2.html">Class 2</a></h2>
+                    <h3 class="grade">91.96/100 (101.16/100)</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
