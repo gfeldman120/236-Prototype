@@ -4,6 +4,9 @@
 //selectClass is the dropdown menu on the header for selecting what class the user wants to go to
 let selectClass;
 
+//buttonHelp is the help button on the main header
+let buttonHelp;
+
 //When the user changes the value of selectClass, switch the page to the one specified
 const selectClassChanged = () => {
     if (selectClass.value === "home-page") {
@@ -17,10 +20,17 @@ const selectClassChanged = () => {
     }
 }
 
+//When the user clicks the help button
+const buttonHelpClicked = () => {
+    window.open("/misc-pages/help.html#button-help", "_self");
+}
+
 //Gets DOM elements and sets up events for them
 const init = () => {
     selectClass = document.querySelector("#select-class");
     selectClass.addEventListener("change", selectClassChanged);
+    buttonHelp = document.querySelector("#button-help");
+    buttonHelp.addEventListener("click", buttonHelpClicked);
 }
 
 window.addEventListener("load", init);
