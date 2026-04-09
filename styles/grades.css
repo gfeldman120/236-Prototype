@@ -1,0 +1,22 @@
+#grades-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.grade-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "class-name grade";
+    border-color: black;
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.class-name{
+    grid-area: class-name;
+}
+
+.grade{
+    grid-area: grade;
+}
