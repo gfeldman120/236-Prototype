@@ -13,6 +13,9 @@ let buttonGrades;
 //buttonSIS is the SIS button on the main header
 let buttonSIS;
 
+//buttonProfile is the profile button on the main header
+let buttonProfile;
+
 //When the user changes the value of selectClass, switch the page to the one specified
 const selectClassChanged = () => {
     if (selectClass.value === "home-page") {
@@ -41,6 +44,11 @@ const buttonSISClicked = () => {
     window.open("https://campus.ps.rit.edu/psc/RITXCP1D/EMPLOYEE/SA/c/NUI_FRAMEWORK.PT_LANDINGPAGE.GBL?&", "_self");
 }
 
+//When the user clicks the profile button on the main header
+const buttonProfileClicked = () => {
+    window.open("/misc-pages/profile.html#button-profile", "_self");
+}
+
 //Gets DOM elements and sets up events for them
 const init = () => {
     selectClass = document.querySelector("#select-class");
@@ -54,6 +62,9 @@ const init = () => {
 
     buttonSIS = document.querySelector("#button-sis");
     buttonSIS.addEventListener("click", buttonSISClicked);
+
+    buttonProfile = document.querySelector("#button-profile");
+    buttonProfile.addEventListener("click", buttonProfileClicked);
 }
 
 window.addEventListener("load", init);
