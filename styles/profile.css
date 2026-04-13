@@ -1,0 +1,27 @@
+/* profile.css should only have styles that apply to the profile page */
+
+#wrapper {
+    display: grid;
+    grid-template-columns: 3fr 3fr 2fr;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas:
+        "header        header        header"
+        "image          main          main  "
+        "footer        footer        footer";
+}
+
+#main-header {
+    grid-area: header;
+}
+
+#image {
+    grid-area: image;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}

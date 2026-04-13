@@ -4,13 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <script type="module" src="src/main.js"></script>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/profile.css">
+    <script type="module" src="/src/main.js"></script>
     <title>Profile</title>
 </head>
 
 <body>
+    <div id="wrapper">
+        <header id="main-header">
+            <!-- main logo -->
+            <a href="/index.html">
+                <h1 id="logo">RIT | myCourses</h1>
+            </a>
 
+            <div id="controls-header">
+                <label for="select-class">Choose a class to view: </label>
+                <select name="view-class" id="select-class">
+                    <option value="default">Select a class</option>
+                    <option value="home-page">Home Page</option>
+                    <option value="class-1">Class 1</option>
+                    <option value="class-2">Class 2</option>
+                </select>
+
+                <button type="button" id="button-grades">Grades</button>
+                <button type="button" id="button-help">Help</button>
+                <button type="button" id="button-profile">Profile</button>
+                <button type="button" id="button-sis">SIS</button>
+            </div>
+        </header>
+
+        <main>
+            <h2>Profile</h2>
+            <p>
+                Lorem Ipsum <br>
+                They/Them <br>
+                Lorem ipsum dolor sit amet. <br>
+                lorem@rit.edu
+            </p>
+        </main>
+
+        <div id="image">
+            <img src="/media/defaultProfilePic.png" alt="Image of Lorem Ipsum">
+        </div>
+
+        <footer>
+            Made by George Dietrich, Gavin Feldman, and Aurora Wolf
+        </footer>
+    </div>
 </body>
 
 </html>
