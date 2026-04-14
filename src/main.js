@@ -18,25 +18,27 @@ let buttonProfile;
 
 //When the user changes the value of selectClass, switch the page to the one specified
 const selectClassChanged = () => {
+    //Temp fix, should change later
+    
     if (selectClass.value === "home-page") {
-        window.open("/index.html#select-class", "_self");
+        window.open("https://gfeldman120.github.io/236-Prototype/", "_self");
     }
     else if (selectClass.value === "class-1") {
-        window.open("/classes/class-1/class-1.html#select-class", "_self");
+        window.open("https://gfeldman120.github.io/236-Prototype/classes/class-1/class-1.html", "_self");
     }
     else if (selectClass.value === "class-2") {
-        window.open("/classes/class-2/class-2.html#select-class", "_self");
+        window.open("https://gfeldman120.github.io/236-Prototype/classes/class-2/class-2.html", "_self");
     }
 }
 
 //When the user clicks the help button
 const buttonHelpClicked = () => {
-    window.open("/misc-pages/help.html#button-help", "_self");
+    window.open("https://gfeldman120.github.io/236-Prototype/misc-pages/help.html", "_self");
 }
 
 //When the user clicks the grades button on the main header
 const buttonGradesClicked = () => {
-    window.open("/misc-pages/grades.html#button-grades", "_self");
+    window.open("https://gfeldman120.github.io/236-Prototype/misc-pages/grades.html", "_self");
 }
 
 //When the user clicks the SIS button on the main header
@@ -46,7 +48,7 @@ const buttonSISClicked = () => {
 
 //When the user clicks the profile button on the main header
 const buttonProfileClicked = () => {
-    window.open("/misc-pages/profile.html#button-profile", "_self");
+    window.open("https://gfeldman120.github.io/236-Prototype/misc-pages/profile.html", "_self");
 }
 
 //Gets DOM elements and sets up events for them
