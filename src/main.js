@@ -19,13 +19,13 @@ let buttonProfile;
 //When the user changes the value of selectClass, switch the page to the one specified
 const selectClassChanged = () => {
     if (selectClass.value === "home-page") {
-        window.open("/index.html#select-class", "_self");
+        window.open("./index.html#select-class", "_self");
     }
     else if (selectClass.value === "class-1") {
-        window.open("/classes/class-1/class-1.html#select-class", "_self");
+        window.open("./classes/class-1/class-1.html#select-class", "_self");
     }
     else if (selectClass.value === "class-2") {
-        window.open("/classes/class-2/class-2.html#select-class", "_self");
+        window.open("./classes/class-2/class-2.html#select-class", "_self");
     }
 }
 
