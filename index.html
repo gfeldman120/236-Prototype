@@ -38,9 +38,9 @@ since they're good at organizing things well -->
                 </a>
 
                 <div id="controls-top">
-                    <img src="media/bell.png">
+                    <img src="media/bell.png" id="notif">
                     <select name="view-class" id="select-class">
-                        <option value="default" disabled selected hidden>Current Classes</option>
+                        <option value="default" disabled selected hidden><span>Current Classes</span></option>
                         <option value="class-1">Class 1</option>
                         <option value="class-2">Class 2</option>
                     </select>
@@ -53,7 +53,7 @@ since they're good at organizing things well -->
                 </div>
             </header>
             <!-- Main needs classes section, classes can be selected, organized by term. -->
-            <div id="classes">
+            <div id="classes" class="section">
                 <ul id="term-select">
                     <li>All Terms</li>
                     <li>Spring 2026</li>
@@ -99,9 +99,12 @@ since they're good at organizing things well -->
                 <!-- Work to do is going to be pretty much the same as it is currently, but overdue assignments will be in a
                     separate section -->
                 <!-- The number in the h2 should indicate how many assignments fit into that category. -->
-                <aside id="work-to-do">
+                <aside id="work-to-do" class="section">
+
+                    <h2>Work To Do</h2>
+
                     <section id="section-due">
-                        <h2>Assignments (2)</h2>
+                        <h1>Assignments (2)</h1>
 
                         <div id="assignment-due-1">
                             <a href="classes/class-1/class-1.html"><b>Assignment 1</b></a>
@@ -117,7 +120,7 @@ since they're good at organizing things well -->
                     <!-- Not really sure how to do this without a bunch of JS, but this should only be shown if there are 
                         actually overdue assignments -->
                     <section id="section-overdue">
-                        <h2>Overdue Assignments (2)</h2>
+                        <h1>Overdue (2)</h1>
 
                         <div id="assignment-overdue-1">
                             <a href="classes/class-1/class-1.html"><b>Overdue Assignment 1</b></a>
@@ -131,11 +134,11 @@ since they're good at organizing things well -->
                     </section>
                 </aside>
 
-                <div id="announcements">
+                <div id="announcements" class="section">
                     <h1>Announcements</h1>
                     <div id="announcement-1">
                         <a href="classes/class-1/class-1.html">
-                            <h2>Announcement 1</h2>
+                            <h2>Class 1: Announcement</h2>
                         </a>
 
                         <p>
@@ -147,7 +150,7 @@ since they're good at organizing things well -->
 
                     <div id="announcement-2">
                         <a href="classes/class-2/class-2.html">
-                            <h2>Announcement 2</h2>
+                            <h2>Class 2: Announcement</h2>
                         </a>
 
                         <p>
