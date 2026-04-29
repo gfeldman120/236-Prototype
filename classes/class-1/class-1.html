@@ -16,46 +16,34 @@
         <div id="wrapper">
             <!-- Left unchanged from main-header in index.html -->
             <header id="main-header">
+                <!-- main logo -->
                 <a href="../../index.html">
-                    <h1 id="logo">RIT | myCourses</h1>
+                    <img src="../../media/home.png">
+                    <h1 id="logo">Class 1</h1>
                 </a>
 
-                <div id="controls-header">
-                    <label for="select-class">Choose a class to view: </label>
+                <div id="controls-top">
+                    <img src="../../media/bell.png" id="notif">
                     <select name="view-class" id="select-class">
-                        <option value="default">Select a class</option>
-                        <option value="home-page">Home Page</option>
+                        <option value="default" disabled selected hidden><span>Current Classes</span></option>
                         <option value="class-1">Class 1</option>
                         <option value="class-2">Class 2</option>
                     </select>
-
-                    <button type="button" id="button-grades">Grades</button>
-                    <button type="button" id="button-help">Help</button>
-                    <button type="button" id="button-profile">Profile</button>
-                    <button type="button" id="button-sis">SIS</button>
                 </div>
-            </header>
-
-            <!-- All the actual class stuff goes here -->
-            <div id="class-wrapper">
-                <header id="class-main-header">
-                    <h2 id="header-class">Class 1</h2>
-                    <div id="extras">
-                        <button type="button" id="button-notifications">Notifications</button>
-                        <!-- Other extra stuff we want can be put here, just can't think of any rn -->
-                    </div>
-                    <div id="header-links">
-                        <button type="button" id="button-class-content">Content</button>
+                <div id="controls-bottom">
+                    <button type="button" id="button-class-content">Content</button>
                         <button type="button" id="button-class-assignments">Assignments</button>
                         <button type="button" id="button-class-quizzes">Quizzes</button>
 
                         <!-- TEMP FIX - the /236-Prototype/ keeps getting deleted from the url when clicking the button after performing certain actions -->
                         <button type="button" id="button-class-grades"><a
                                 href="https://gfeldman120.github.io/236-Prototype/misc-pages/grades.html">Grades</a></button>
+                </div>
+            </header>
 
-                    </div>
-                </header>
-                <div id="announcements">
+            <!-- All the actual class stuff goes here -->
+            <div id="class-wrapper">
+                <div id="announcements" class="section">
                     <h2>Announcement 1</h2>
                     <a>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptates magnam deserunt,
                         similique obcaecati ut veritatis commodi neque debitis itaque incidunt illo ipsa, quos,

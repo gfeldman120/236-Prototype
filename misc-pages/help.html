@@ -13,26 +13,26 @@
 <body>
     <div id="wrapper">
         <header id="main-header">
-            <!-- main logo -->
-            <a href="../index.html">
-                <h1 id="logo">RIT | myCourses</h1>
-            </a>
+                <!-- main logo -->
+                <a href="index.html">
+                    <h1 id="logo">RIT | myCourses</h1>
+                </a>
 
-            <div id="controls-header">
-                <label for="select-class">Choose a class to view: </label>
-                <select name="view-class" id="select-class">
-                    <option value="default">Select a class</option>
-                    <option value="home-page">Home Page</option>
-                    <option value="class-1">Class 1</option>
-                    <option value="class-2">Class 2</option>
-                </select>
-
-                <button type="button" id="button-grades">Grades</button>
-                <button type="button" id="button-help">Help</button>
-                <button type="button" id="button-profile">Profile</button>
-                <button type="button" id="button-sis">SIS</button>
-            </div>
-        </header>
+                <div id="controls-top">
+                    <img src="media/bell.png" id="notif">
+                    <select name="view-class" id="select-class">
+                        <option value="default" disabled selected hidden><span>Current Classes</span></option>
+                        <option value="class-1">Class 1</option>
+                        <option value="class-2">Class 2</option>
+                    </select>
+                </div>
+                <div id="controls-bottom">
+                    <button type="button" id="button-grades">Grades</button>
+                    <button type="button" id="button-help">Help</button>
+                    <button type="button" id="button-profile">Profile</button>
+                    <button type="button" id="button-sis">SIS</button>
+                </div>
+            </header>
 
         <main id="help">
             <h2>Mental Health Support</h2>
