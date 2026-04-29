@@ -13,12 +13,11 @@
         "classes classes sidebar"
         "footer footer footer";
 }
-/* 
-        "header header header"
-        "classes classes work-to-do"
-        "classes classes anouncements"
-        "footer footer footer)
-*/
+
+@media (max-width < 800px) {
+    /* We'll do this eventually! */
+}
+
 #main-header {
     grid-area: header;
 }
