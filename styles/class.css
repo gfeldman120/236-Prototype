@@ -3,55 +3,13 @@
 #class-wrapper {
     display: grid;
     grid-template-columns: 3fr 3fr 2fr;
-    grid-template-rows: 1fr 8fr 1fr;
     grid-template-areas:
-        "header        header        header"
-        "announcements announcements work-to-do"
-        "footer        footer        footer";
+        "announcements announcements work-to-do";
 }
-
-/* Can we put a grid inside a grid? */
-#class-main-header {
-    grid-area: header;
-    display: grid;
-    grid-template-columns: 4fr 2fr 2fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-        "class-name class-name  extras"
-        "links      links       links";
-    background-color: #F76902;
-}
-
-/* Not sure how to force or not, but for now, NEVER USE OUTSIDE OF A #CLASS-MAIN-HEADER */
-
-#header-class {
-    grid-area: class-name;
-}
-
-#header-extras {
-    grid-area: extras;
-}
-
-#header-links {
-    grid-area: links;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    column-gap: 2em;
-}
-
-/* Commenting this out for now since they don't really look like buttons when styled like this */
-/* #header-links button {
-    border: white;
-    color: black;
-} */
-
-/* Anything below this can be used outside #class-main-header */
 
 #announcements {
     grid-area: announcements;
+    margin: 0px 25px auto 0px;
 }
 
 #work-to-do {
