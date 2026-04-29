@@ -55,6 +55,7 @@ const buttonProfileClicked = () => {
 const init = () => {
     selectClass = document.querySelector("#select-class");
     selectClass.addEventListener("change", selectClassChanged);
+    selectClass.value = "default";
 
     buttonHelp = document.querySelector("#button-help");
     buttonHelp.addEventListener("click", buttonHelpClicked);
