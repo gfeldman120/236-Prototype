@@ -110,9 +110,8 @@ header a h1:hover, a:hover, button:hover, span:hover, #notif:hover {
     cursor: pointer;
 }
 
-select option:hover {
-    text-decoration: line-through;
-    border: 1px solid black;
+select option {
+    border-bottom: 1px solid red;
 }
 
 h2 {
@@ -139,4 +138,12 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+}
+
+a {
+    color: rgb(0, 111, 191);
+}
+
+a:hover {
+    color: rgb(0, 68, 137);
 }
