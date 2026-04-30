@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../styles/main.css">
+    <link rel="stylesheet" href="../../../styles/assignment.css">
+    <script type="module" src="../../../src/main.js"></script>
+    <script type="module" src="../../../src/class.js"></script>
+    <title>Class 1</title>
+</head>
+
+<body>
+    <main>
+        <div id="shadow-helper"></div>
+        <div id="wrapper">
+            <!-- Left unchanged from main-header in index.html -->
+            <header id="main-header">
+                <!-- main logo -->
+                <div id="non-home-shortcut">
+                    <a href="../../../index.html"><img src="../../../media/home.png"></a>
+                    <a href="../class-1.html"><h1 id="logo">Class 1</h1></a>
+                </div>
+
+                <div id="controls-top">
+                    <img src="../../../media/bell.png" id="notif">
+                    <select name="view-class" id="select-class">
+                        <option value="default" disabled selected hidden><span>Current Classes</span></option>
+                        <option value="class-1">Class 1</option>
+                        <option value="class-2">Class 2</option>
+                    </select>
+                </div>
+                <div id="controls-bottom">
+                    <button type="button" id="button-class-content">Content</button>
+                        <button type="button" id="button-class-assignments">Assignments</button>
+                        <button type="button" id="button-class-quizzes">Quizzes</button>
+                        <button type="button" id="button-class-grades"><a href="https://gfeldman120.github.io/236-Prototype/misc-pages/grades.html">Grades</a></button>
+                </div>
+            </header>
+
+            <!-- All the actual class stuff goes here -->
+            <div id="class-wrapper">
+                <h1>Assignment 1</h1>
+                <h2>Instructions</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut voluptates magnam deserunt,
+                    similique obcaecati ut veritatis commodi neque debitis itaque incidunt illo ipsa, quos,
+                    accusamus necessitatibus? Excepturi molestias iusto perspiciatis odio vel?</p>
+                <p>Due December 31st, 2099 11:59PM</p>
+                <h2>Submission</h2>
+                <button type="button" id="button-addFile">Add File</button>
+                <ul>
+                    <li class="file">
+                        <a href="">Some File You Uploaded (1.25MB)</a>
+                        <p>Source: Your Computer</p>
+                    </li>
+                </ul>
+                <h3>Comments</h3>
+                <img src="../../../media/comments.png" id="img-comments">
+            </div>
+            <footer>
+                <button type="button" id="button-submit">Submit</button>
+                <button type="button" id="button-cancel">Cancel</button>
+            </footer>
+        </div>
+    </main>
+</body>
+
+</html>
