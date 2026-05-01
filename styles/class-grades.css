@@ -13,6 +13,10 @@
     background-color: rgb(246, 247, 248);
 }
 
+.grade-header h3 {
+    font-size: 1.25rem;
+}
+
 .grade-item {
     display: grid;
     grid-template-columns: 5fr 2fr 2fr 4fr;
