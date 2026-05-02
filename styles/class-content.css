@@ -1,0 +1,164 @@
+#content-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+#sidebar, #content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#sidebar > *, #content > * {
+    margin-top: 15px;
+}
+
+#sidebar {
+    margin-right: 20px;
+}
+
+#search {
+    height: 2.5rem;
+    border-radius: 7px;
+    border: 2px solid rgb(205, 213, 220);
+}
+
+.img-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#search-header {
+    margin-top: 7px;
+    justify-content: space-between;
+}
+
+#search-header input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+#search-header img {
+    margin: auto;
+    margin-top: 3px;
+    height: 2rem;
+    width: 2rem;
+    padding: 0.15rem;
+    border: 2px solid rgb(205, 213, 220);
+    border-radius: 7px;
+    background-color: white;
+}
+
+#search-header img:hover {
+    background-color: rgb(205, 213, 220);
+}
+
+.right-img {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.img-text img {
+    height: 2rem;
+    width: 2rem;
+    margin-right: 10px
+}
+
+.right-img img {
+    height: 1rem;
+}
+
+.img-text p {
+    padding-top: 10px;
+}
+
+#topics {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#topics > * > * {
+    padding: 15px 0px 15px 0px;
+    border-top: 2px solid rgb(205, 213, 220);
+}
+
+#topics:first-child > * > * {
+    border-top: 10px solid black;
+}
+
+#content {
+    padding-left: 20px;
+    border-left: 2px solid rgb(205, 213, 220);
+}
+
+#content h1 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    border-radius: 7px;
+}
+
+.section > *:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: rgb(246, 247, 248);
+    border-bottom: 2px solid rgb(205, 213, 220);
+}
+
+.subtitle h2 {
+    margin: 0px;
+    padding: 15px;
+}
+
+.subtitle img {
+    height: 1.5rem;
+    margin-right: 15px;
+}
+
+.section p {
+    font-size: 1.15rem;
+    margin: 15px;
+    margin-bottom: 0px;
+}
+
+.section ul {
+    list-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.25rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 2px solid rgb(205, 213, 220);
+    margin-bottom: 10px;
+}
+
+.item:last-child {
+    border-bottom: 0px solid black;
+}
+
+.item p {
+    font-size: 0.85rem;
+    color: grey;
+    margin: 0px;
+    margin-bottom: 5px;
+}
+
+.item div img {
+    height: 1.25rem;
+    width: 1.25rem;
+    margin: 0px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
