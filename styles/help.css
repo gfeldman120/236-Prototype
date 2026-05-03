@@ -19,3 +19,24 @@
 footer {
     grid-area: footer;
 }
+
+/* mobile */
+@media only screen and (max-width: 500px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+
+        grid-template-areas:
+            "header "
+            "help   "
+            "footer ";
+
+        max-width: 100vw;
+    }
+
+    html {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}

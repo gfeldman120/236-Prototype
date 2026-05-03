@@ -22,7 +22,7 @@ body {
 
 #main-header {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-rows: 3fr 2fr;
     grid-template-areas:
         "logo .... controls-top"
@@ -53,6 +53,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
+    overflow: hidden;
 }
 
 #main-header #non-home-shortcut {
@@ -125,7 +126,11 @@ body {
     margin-right: 15px;
 }
 
-header a h1:hover, a:hover, button:hover, span:hover, #notif:hover {
+header a h1:hover,
+a:hover,
+button:hover,
+span:hover,
+#notif:hover {
     text-decoration: underline;
     cursor: pointer;
 }
@@ -155,7 +160,9 @@ p {
     padding: 10px;
 }
 
-.section h1, .section h2, .section p {
+.section h1,
+.section h2,
+.section p {
     margin: 5px;
 }
 
@@ -190,4 +197,17 @@ a {
 
 a:hover {
     color: rgb(0, 68, 137);
+}
+
+@media only screen and (max-width: 500px) {
+    #main-header a {
+        color: black;
+        text-decoration: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        overflow: hidden;
+        font-size: 0.9rem;
+    }
 }
