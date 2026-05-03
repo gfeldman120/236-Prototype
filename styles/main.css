@@ -1,4 +1,8 @@
 /* main.css should only contain styles that apply to all pages */
+main {
+    overflow: hidden;
+}
+
 html, body {
     overflow-x: hidden;
 }
@@ -13,7 +17,6 @@ body {
 
 #wrapper {
     max-width: 1200px;
-    max-height: 80vw;
     margin: 0 auto;
 }
 
@@ -36,7 +39,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    width: 1000vw;
+    width: 100vw;
     height: 150px;
     box-shadow: 0px 0px 10px 5px grey;
     z-index: 1;
