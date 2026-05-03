@@ -29,6 +29,15 @@ const selectClassChanged = () => {
     else if (selectClass.value === "class-2") {
         window.open("https://gfeldman120.github.io/236-Prototype/classes/class-2/class-2.html", "_self");
     }
+    else if (selectClass.value === "class-3") {
+        window.open("https://gfeldman120.github.io/236-Prototype/classes/class-3/class-3.html", "_self");
+    }
+    else if (selectClass.value === "class-4") {
+        window.open("https://gfeldman120.github.io/236-Prototype/classes/class-4/class-4.html", "_self");
+    }
+    else if (selectClass.value === "class-5") {
+        window.open("https://gfeldman120.github.io/236-Prototype/classes/class-5/class-5.html", "_self");
+    }
 }
 
 //When the user clicks the help button
