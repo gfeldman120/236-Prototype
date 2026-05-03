@@ -24,14 +24,16 @@
 
 .assignment {
     display: grid;
+
     grid-template-areas:
         "image title"
         "image class";
-        grid-template-columns: max-content auto;
+
+    grid-template-columns: max-content auto;
     justify-items: left;
     align-items: center;
     margin-bottom: 10px;
-    border: 1px solid rgba(0,0,0,0);
+    border: 1px solid rgba(0, 0, 0, 0);
 }
 
 .assignment:hover {
@@ -63,3 +65,23 @@
 }
 
 /* Assignments end */
+
+/* mobile */
+@media only screen and (max-width: 500px) {
+    #wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content;
+
+        grid-template-areas:
+            "work-to-do   "
+            "announcements";
+
+        max-width: 100vw;
+    }
+
+    html {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
