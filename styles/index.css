@@ -72,6 +72,12 @@ li:hover {
     overflow: hidden;
     margin: 5px;
     background-color: white;
+    text-decoration: none;
+}
+
+.class-block:hover {
+    color: rgb(0, 111, 191);
+    text-decoration: underline;
 }
 
 .class-block h1 {
